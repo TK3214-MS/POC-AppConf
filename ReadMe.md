@@ -258,3 +258,10 @@ a. 作成したLogic Appリソースの”Authorization”メニューより”A
 | 設定名 | 設定値 |
 | ------------- | ------------- |
 | `Return` | HTTPアクションから`本文`を参照 |
+
+## 参考情報
+[Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts?tabs=v4)
+Set up Azure App Service access restrictions
+Enable authentication for function calls
+Authenticate with managed identities
+Use flow in PowerApps to upload files or return data tables
