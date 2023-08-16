@@ -29,7 +29,7 @@
 | `Memo.LA.EntraApp.URI` | api:sample-api| | Logic App 認証用のEntra ID アプリのAPI URI |
 | `Memo.PA.EntraApp.ID` | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx| | Power Automate 認証用のEntra ID アプリのアプリケーションID |
 | `Memo.PA.EntraApp.SC` | XxxxxxxXXXxxxxxxxxxx| | Power Automate 認証用のEntra ID アプリのシークレット |
-| `Memo.LA.POSTURL` | https://prod-15.japaneast.logic.azure.com:443/workflows/xxxxxxxxxxxxxxxxxxxxxxxxxx/triggers/manual/paths/invoke?api-version=2016-10-01 | | Logic App HTTP コール用URL |
+| `Memo.LA.POSTURL` | https://xxx.logic.azure.com~api-version=2016-10-01 | | Logic App HTTP コール用URL |
 
 # 構成手順
 ## リソースの作成
