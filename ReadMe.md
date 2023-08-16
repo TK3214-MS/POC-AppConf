@@ -207,10 +207,7 @@ a. 作成したLogic Appリソースの”Authorization”メニューより”A
 | ------------- | ------------- |
 | `Request Body` | 空白 |
 | `Method` | GET |
-| `Queries` | {
-   "key":HTTPトリガーから`key`を参照,
-   "label":HTTPトリガーから`label`を参照
-} |
+| `Queries` | { <br>    "key":HTTPトリガーから`key`を参照, <br>    "label":HTTPトリガーから`label`を参照 <br> } |
 | `Authentication type` | Managed identity |
 | `Managed identity` | System-assigned managed identity |
 | `Audience` | https://management.azure.com |
