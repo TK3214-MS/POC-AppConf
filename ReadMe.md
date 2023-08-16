@@ -46,7 +46,7 @@ a. Azure ポータルから以下設定値で App Configuration リソースを�
 | `Resource Name` | 任意のアプリ識別名を入力 |
 | `Pricing Tier` | Free |
 
-b. Endpoint値をMemo.AppConf.Endpointとしてメモします。
+b. Endpoint値を`Memo.AppConf.Endpoint`としてメモします。
 
 ![02](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/381cdd44-f63e-43d8-aeb2-c28d64d3d4e3)
 
@@ -75,6 +75,24 @@ b. Node.jsアプリで参照するアプリケーション設定を追加しま�
 | ------------- | ------------- |
 | `AZURE_APPCONFIG_ENDPOINT` | `Memo.AppConf.Endpoint` |
 
-c. システム割り当てマネージドIDを有効化し、Memo.Func.ManagedIDとしてObject IDをメモします。
+c. システム割り当てマネージドIDを有効化し、`Memo.Func.ManagedID`としてObject IDをメモします。
 
 ![05](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/599beed4-da97-4f69-8717-5c30c9a0f93a)
+
+### Logic Apps リソースの作成
+a. Azureポータルから以下設定値でLogic Appsリソースを作成します。
+
+![06](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/6e9ed9c5-f468-456d-a0fd-7e747075c453)
+
+| 設定名 | 設定値 |
+| ------------- | ------------- |
+| `Subscription` | リソースを作成するサブスクリプションを指定 |
+| `Resource Group` | リソースを作成するリソースグループを指定、もしくは新規作成 |
+| `Logic App name` | 任意のアプリ識別名を入力 |
+| `Region` | リソースを作成するリージョンを指定 |
+| `Enable Log Analytics` | No |
+| `Plan type` | Consumption |
+
+b. システム割り当てマネージドIDを有効化し、`Memo.LA.ManagedID`としてObject IDをメモします。
+
+![07](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/23b01658-5a4a-4598-8bf4-f078264e97a9)
