@@ -187,11 +187,7 @@ a. 作成したLogic Appリソースの”Authorization”メニューより”A
 | 設定名 | 設定値 |
 | ------------- | ------------- |
 | `HTTP POST URL` | 自動生成 |
-| `Request Body JSON Schema` | {
-   "key":"",
-   "label":""
-}
-※Use sample payload to generate schemaから上記サンプルスキーマを入力し生成 |
+| `Request Body JSON Schema` | { <br>   "key":"", <br>    "label":"" <br> } <br> ※Use sample payload to generate schemaから上記サンプルスキーマを入力し生成 |
 
 フロー保存時に自動生成されるHTTP POST URLを以下規則に則り編集し、`Memo.LA.POSTURL`としてメモします。
 
@@ -247,10 +243,7 @@ a. 作成したLogic Appリソースの”Authorization”メニューより”A
 | ------------- | ------------- |
 | `方法` | POST |
 | `URI` | `Memo.LA.POSTURL` |
-| `本文` | {
-  "key": PowerAppsトリガーから`key`を参照,
-  "label": PowerAppsトリガーから`label`を参照
-} |
+| `本文` | { <br>  "key": PowerAppsトリガーから`key`を参照, <br>  "label": PowerAppsトリガーから`label`を参照 <br>} |
 | `認証` | Active Directory OAuth |
 | `テナント` | `Memo.DirectoryID` |
 | `対象ユーザー` | `Memo.LA.EntraApp.ID` |
