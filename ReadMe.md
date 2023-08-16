@@ -261,7 +261,11 @@ a. 作成したLogic Appリソースの”Authorization”メニューより”A
 
 ## 参考情報
 [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts?tabs=v4)
-Set up Azure App Service access restrictions
-Enable authentication for function calls
-Authenticate with managed identities
-Use flow in PowerApps to upload files or return data tables
+
+[Set up Azure App Service access restrictions](https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions?tabs=azurecli)
+
+[Enable authentication for function calls](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-azure-functions?tabs=consumption#enable-authentication-for-function-calls-consumption-workflows-only)
+
+[Authenticate with managed identities](https://learn.microsoft.com/en-us/azure/logic-apps/create-managed-service-identity?tabs=consumption#authenticate-access-with-identity)
+
+[Use flow in PowerApps to upload files or return data tables](https://powerautomate.microsoft.com/cs-cz/blog/howto-upload-return-file/)
