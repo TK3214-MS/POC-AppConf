@@ -34,7 +34,22 @@
 # 構成手順
 ## リソースの作成
 ### App Configuration リソースの作成
-サインアップとサインインユーザーフローを作成します。
+a. Azure ポータルから以下設定値で App Configuration リソースを作成します。
+
+![01](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/f8582022-7142-45c9-83c0-1e83db0dcf59)
+
+| 設定名 | 設定値 |
+| ------------- | ------------- |
+| Subscription | リソースを作成するサブスクリプションを指定 |
+| Resource Group | リソースを作成するリソースグループを指定、もしくは新規作成 |
+| Location | リソースを作成するリージョンを指定 |
+| Resource Name | 任意のアプリ識別名を入力 |
+| Pricing Tier | Free |
+
+b. Endpoint値をMemo.AppConf.Endpointとしてメモします。
+
+![02](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/381cdd44-f63e-43d8-aeb2-c28d64d3d4e3)
+
 
 [サインアップとサインインユーザーフローを作成する](https://learn.microsoft.com/ja-jp/azure/active-directory-b2c/add-sign-up-and-sign-in-policy?pivots=b2c-user-flow)
 
