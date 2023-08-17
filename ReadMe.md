@@ -174,7 +174,7 @@ a. 作成したLogic Appリソースの”Authorization”メニューより”A
 ### Visual Studio Code からの Function プロジェクトの展開
 
 ## Logic Apps フローの作成
-今回のサンプルシナリオ用に”HTTP要求をパラメーター付きで受け取り、Function Appをトリガーし状態コード、及びBodyをHTTP応答する”フローを作成しました。
+”HTTP要求をパラメーター付きで受け取り、Function Appをトリガーし状態コード、及びBodyをHTTP応答する”フローを作成します。
 
 ![16](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/dd63a36b-9374-4693-b423-eb5b821393b2)
 
@@ -219,7 +219,7 @@ a. 作成したLogic Appリソースの”Authorization”メニューより”A
 | `Body` | Functionアクションから`Body`を参照 |
 
 ## Power Automateフローの作成
-今回のサンプルシナリオ用に”Power Appsから要求をパラメーター付きで受け取り、Logic Appsフローをトリガーし返ってきたBodyを応答する”フローを作成しました。
+”Power Appsから要求をパラメーター付きで受け取り、Logic Appsフローをトリガーし返ってきたBodyを応答する”フローを作成します。
 
 ![20](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/3cc14aae-4343-406b-b7ab-aa3062015cc3)
 
@@ -258,6 +258,25 @@ a. 作成したLogic Appリソースの”Authorization”メニューより”A
 | 設定名 | 設定値 |
 | ------------- | ------------- |
 | `Return` | HTTPアクションから`本文`を参照 |
+
+## Power Apps アプリの作成
+ここまで作成してきた Power Automate フロー、並びに Logic Apps フローにパラメータ付きで要求を送信する為の Power Apps アプリを作成します。
+主要な画面上の項目は以下の通りです。
+
+![24](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/5845ad00-3e34-4915-b31c-84d288a6b8f0)
+
+各項目に設定した関数は以下の通りです。
+
+| 項目名 | プロパティ | 関数 |
+| ------------- | ------------- | ------------- |
+| `Dropdown1` | Items | ["SecurityPolicy01","SecurityPolicy02"] |
+| `Dropdown1_1` | Items | ["v1","v2"] |
+| `Button1` | OnSelect | Set(`ReturnBody`,'POC-AppConf-Bridge'.Run(Dropdown1.SelectedText.Value,Dropdown1_1.SelectedText.Value).return) |
+| `Label3` | Text | `ReturnBody` |
+
+事前に作成した Power Automate フローを関連付けておきます。
+
+![25](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/85638d0d-479c-4110-a276-1748804d340d)
 
 ## 参考情報
 [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts?tabs=v4)
