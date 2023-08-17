@@ -4,6 +4,22 @@
 - [構成手順](#構成手順)
   - [リソースの作成](#リソースの作成)
     - [App Configuration リソースの作成](#app-configuration-リソースの作成)
+    - [Functions リソースの作成](#functions-リソースの作成)
+    - [Logic Apps リソースの作成](#logic-apps-リソースの作成)
+  - [App Configuration／Function App 間の保護](#app-configuration／function-app間の保護)
+    - [App Configuration への RBAC 設定](#app-configuration-への-rbac-設定)
+  - [Function App／Logic Apps 間の保護](#function-app／logic-apps間の保護)
+    - [Function App への認証設定](#function-app-への認証設定)
+  - [Logic Apps／Power Automate 間の保護](#logic-apps／power-automate間の保護)
+    - [Logic Apps 認証用 Entra ID アプリ作成](#logic-apps-認証用-entra-id-アプリ作成)
+    - [Power Automate 認証用 Entra ID アプリ作成](#power-automate-認証用-entra-id-アプリ作成)
+    - [Logic Apps への認証ポリシー構成](#logic-apps-への認証ポリシー構成)
+  - [Function App へのアプリ展開](#function-appへのアプリ展開)
+    - [Visual Studio Code からの Function プロジェクトの展開](#visual-studio-code-からの-function-プロジェクトの展開)
+  - [Logic Apps フローの作成](#logic-apps-フローの作成)
+  - [Power Automate フローの作成](#power-automateフローの作成)
+  - [Power Apps アプリの作成](#power-apps-アプリの作成)
+- [参考情報](#参考情報)
 
 # 前提
 以下 Power Apps から App Configuration 上のキーバリューにセキュアアクセスするシナリオを実現する為のステップバイステップガイドを提供します。
