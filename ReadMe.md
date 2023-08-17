@@ -301,7 +301,7 @@ a. 作成したLogic Appリソースの”Authorization”メニューより”A
 
 ![25](https://github.com/TK3214-MS/POC-AppConf/assets/89323076/85638d0d-479c-4110-a276-1748804d340d)
 
-## 参考情報
+# 参考情報
 [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts?tabs=v4)
 
 [Set up Azure App Service access restrictions](https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions?tabs=azurecli)
