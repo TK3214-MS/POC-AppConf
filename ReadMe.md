@@ -97,6 +97,7 @@ b. Node.jsアプリで参照するアプリケーション設定を追加しま�
 | 設定名 | 設定値 |
 | ------------- | ------------- |
 | `AZURE_APPCONFIG_ENDPOINT` | `Memo.AppConf.Endpoint` |
+| `AzureWebJobsFeatureFlags` | EnableWorkerIndexing |
 
 c. システム割り当てマネージドIDを有効化し、`Memo.Func.ManagedID`としてObject IDをメモします。
 
@@ -195,6 +196,10 @@ a. 作成したLogic Appリソースの”Authorization”メニューより”A
 
 ## Function Appへのアプリ展開
 ### Visual Studio Code からの Function プロジェクトの展開
+
+本レポジトリをフォーク、もしくはコードをダウンロードし、ディレクトリをVisual Studio Codeで開いた上で Azure 上 Function App リソースへコードデプロイします。
+
+[Develop Azure Functions by using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp)
 
 ## Logic Apps フローの作成
 ”HTTP要求をパラメーター付きで受け取り、Function Appをトリガーし状態コード、及びBodyをHTTP応答する”フローを作成します。
